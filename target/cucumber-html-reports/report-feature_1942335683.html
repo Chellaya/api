@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Login module API Automation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMRBranchAPIAutomation</td>
+      <td>02 Jun 2023, 19:14</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Login module API Automation</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3194000000">3.194</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4053346056.html">@Login</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Login module API Automation</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4053346056.html">@Login</a>
+</div>
+
+
+  <span class="lead-duration duration">3.194</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get User Logtoken from Login Endpoint</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User add header</span>
+
+  <span class="lead-duration duration">0.634</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add base Authentication for login</span>
+
+  <span class="lead-duration duration">0.117</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User send <span class="argument">&quot;POST&quot;</span> request for login endpoint</span>
+
+  <span class="lead-duration duration">2.149</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User Verify the status code is <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User verify the login response body firstName present as <span class="argument">&quot;Ashok&quot;</span> and get the logtoken</span>
+
+  <span class="lead-duration duration">0.292</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.step.HooksClass.afterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.042</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>{
+    &quot;status&quot;: 200,
+    &quot;message&quot;: &quot;Login successfully&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 1774,
+        &quot;user_code&quot;: &quot;USRYxTIi&quot;,
+        &quot;first_name&quot;: &quot;Ashok&quot;,
+        &quot;last_name&quot;: &quot;chellaya&quot;,
+        &quot;email&quot;: &quot;ashokchella204194@gmail.com&quot;,
+        &quot;mobile_number&quot;: &quot;7401570806&quot;,
+        &quot;password&quot;: &quot;$2y$10$My0R98bAvgP4pu.Tl3UdTO.Lq4gqWIB78Uv.9eicM0v7U3u6qNq7G&quot;,
+        &quot;api_key&quot;: &quot;WXYZ2835lmn54287&quot;,
+        &quot;days&quot;: 20,
+        &quot;month&quot;: &quot;April&quot;,
+        &quot;year&quot;: &quot;1994&quot;,
+        &quot;gender&quot;: &quot;male&quot;,
+        &quot;hobbies&quot;: &quot;cooking&quot;,
+        &quot;forgot_key&quot;: &quot;&quot;,
+        &quot;profile_picture&quot;: &quot;&quot;,
+        &quot;login_cookie&quot;: &quot;YXNob2tjaGVsbGEyMDQxOTRAZ21haWwuY29t1685436311&quot;,
+        &quot;google_signin&quot;: 0,
+        &quot;google_auth_id&quot;: &quot;&quot;,
+        &quot;facebook_signin&quot;: 0,
+        &quot;facebook_id&quot;: &quot;&quot;,
+        &quot;referral_code&quot;: &quot;FG3757NOP26&quot;,
+        &quot;wallet_amount&quot;: &quot;0.00&quot;,
+        &quot;device_id&quot;: null,
+        &quot;device_token&quot;: null,
+        &quot;is_verified&quot;: 1,
+        &quot;admin_verify&quot;: 1,
+        &quot;device_type&quot;: null,
+        &quot;status&quot;: &quot;AC&quot;,
+        &quot;travel_access&quot;: &quot;yes&quot;,
+        &quot;grocery_front_access&quot;: &quot;yes&quot;,
+        &quot;travel_with_api_access&quot;: &quot;no&quot;,
+        &quot;sample_api_access&quot;: &quot;yes&quot;,
+        &quot;database_access&quot;: &quot;no&quot;,
+        &quot;admin_panel_access&quot;: &quot;no&quot;,
+        &quot;created_at&quot;: &quot;2023-05-03 13:00:53&quot;,
+        &quot;updated_at&quot;: &quot;2023-06-02 19:14:46&quot;,
+        &quot;refer_screen&quot;: &quot;Ask your friends to signup with your referral code. Once done, both you and your friend each earn $ 5&quot;,
+        &quot;logtoken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiNWI5MDg1YjYyNTU1MmEzNWYzNjA1MGZkYTU4MWExYjE3YzJkYWQ4ZTU4N2QzZGM0Yjk4ODFkNDI2MzQzNjA1OGRiOGFlZjIyOTBlNWY3In0.eyJhdWQiOiIzIiwianRpIjoiM2I1YjkwODViNjI1NTUyYTM1ZjM2MDUwZmRhNTgxYTFiMTdjMmRhZDhlNTg3ZDNkYzRiOTg4MWQ0MjYzNDM2MDU4ZGI4YWVmMjI5MGU1ZjciLCJpYXQiOjE2ODU3MTM0ODYsIm5iZiI6MTY4NTcxMzQ4NiwiZXhwIjoxNzE3MzM1ODg2LCJzdWIiOiIxNzc0Iiwic2NvcGVzIjpbXX0.vp49F9Kcl53oxEU_DNrlFR1HKdqzHFgE-XYUyJH9_km2iWQSOtAGRcK7busi4v1wTgsbNxvjLzfe7zxFhRIjeDD9S42VUpuNqLFQJDrHJaU7F2vRRNHur8eG125uqvofVL7HvcVxkYqHlW_cMwvS3glOjEya7n24McjKqvehUNQSI0SjaiNtP5fWsVLiLnjklPkuRPwF8H8VEArlUqDGE-sUgzYlFwaS5u5y3br9C0BGj5wGrahZ1CQzPlhpGy97bxHvEChK2mM3TTr_hHhsWQAhJ0pfSUZAr572gfIM-gbFwmDH3OiGzIDOxPmsRiueHGwKr6G_H0BEbqcSCTOuKKSqbzCBKka-ZRRN00c7wcSKkAepSmKH8Upg0l1Kc5cwlkIuUs3JTi3TKe9-v-vwJUQHEmAbOqke7yjjnGTEZSzcckt4Gh93CjeN74lqXeElyA4LVQAyUtZ5oXDbVIFPU8w6dLYrQq0Oog_w-idNi6WkSiaM3oepoT1gAWx0gSmxeDHkVEDhBIQhxSCgLLJE_3PPBS9AqSN2xA2JPPW5CKQiyuandmFe_63WujYhT-XTb-yUCIHLJzB8OSx1SXPkcXm_s_59mbkSB7QrIdBEpWuN45DjE9L5VDBVD_F37gv1Z-zL5otbkrZijRDWA8ZTJmT4lH_9cuoClzHEvNW7JS0&quot;,
+        &quot;user_role&quot;: [
+            {
+                &quot;id&quot;: 7,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;name&quot;: &quot;User&quot;,
+                &quot;status&quot;: &quot;AC&quot;,
+                &quot;created_at&quot;: &quot;2019-01-24 11:20:45&quot;,
+                &quot;updated_at&quot;: &quot;2022-11-18 12:37:46&quot;,
+                &quot;pivot&quot;: {
+                    &quot;user_id&quot;: 1774,
+                    &quot;role_id&quot;: 7
+                }
+            }
+        ]
+    },
+    &quot;refer_msg&quot;: &quot;Register on GoGrocery with FG3757NOP26 and earn $ 5. Download on Android https://play.google.com/store/apps/details?id=com.Go_Grocery&amp;hl=en &amp; Download on iOS https://apps.apple.com/in/app/go-grocery-club/id1512758810&quot;,
+    &quot;cart_count&quot;: 0,
+    &quot;role&quot;: &quot;user&quot;
+}</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
